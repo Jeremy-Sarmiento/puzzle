@@ -37,7 +37,7 @@ jobs:
           if [ -f pyproject.toml ]; then pip install .; fi
 
       - name: Construir el APK con Flet
-        run: yes | flet build apk --assets-dir asset
+        run: yes | flet build apk
 
       - name: Guardar el APK para descargarlo
         uses: actions/upload-artifact@v4
